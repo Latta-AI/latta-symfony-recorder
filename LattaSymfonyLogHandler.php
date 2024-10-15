@@ -14,6 +14,6 @@ class LattaSymfonyLogHandler extends AbstractProcessingHandler
 
     protected function write(LogRecord $record): void
     {
-        array_push(LattaSymfonyRecorder::$logs, ["level" => "INFO", "message" => $record->formatted, "timestamp" => time()]);
+        array_push(LattaSymfonyRecorder::$logs, ["level" => "DEBUG", "message" => $record->formatted, "timestamp" => time()]);
     }
 }
