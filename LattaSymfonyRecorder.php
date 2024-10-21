@@ -42,7 +42,7 @@ class LattaSymfonyRecorder extends LattaRecorder
 
         $attachment = new LattaAttachment($e, LattaRecorder::$logs);
 
-        $this->api->putAttachment($lattaSnapshot, $attachment);
+        $this->api->putAttachment($lattaSnapshot, $attachment->toString());
         exit(1);
     }
 }
